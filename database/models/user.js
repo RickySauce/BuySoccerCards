@@ -20,8 +20,14 @@ module.exports = (sequelize, DataTypes) => {
       unique: true,
     },
     password: DataTypes.STRING, //needs password validators
-    firstName: DataTypes.STRING, //check for letters only
-    lastName: DataTypes.STRING, // check for letters only
+    firstName: {
+      type: DataTypes.STRING, 
+      isAlpha: true,
+    },
+    lastName: {
+      type: DataTypes.STRING,
+      isAlpha: true,
+    },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
