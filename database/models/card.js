@@ -18,43 +18,43 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    description: DataTypes.STRING,
-    transactionId: DataTypes.INTEGER,
-    playerId: {
-      type: DataTypes.INTEGER,
+    description: {
+      type: DataTypes.STRING,
       allowNull: false,
     },
-    manufacturerId: {
-     type: DataTypes.INTEGER,
-     allowNull: false,
-    },
-    nationalityId: DataTypes.INTEGER,
-    teamId:{
-      tpye: DataTypes.INTEGER,
-      allowNull: false
-    },
-    leagueId: 
-      {
-        type: DataTypes.INTEGER,
-        allowNull: false
-      },
+    transactionId: DataTypes.INTEGER,
+    playerId: DataTypes.INTEGER,
+    manufacturerId: DataTypes.INTEGER,
+    teamId: DataTypes.INTEGER,
+    leagueId: DataTypes.INTEGER,
     year: { 
       type: DataTypes.INTEGER,
       allowNull: false
       //max value should be no more greater than the current year
       //will have to research the 'oldest' cards avaialable, the year should not predate that
     },
+    salePrice: {
+      type: DataTypes.DECIMAL,
+      allowNull: true,
+      min: 0.01
+    },
     price: {
       type: DataTypes.DECIMAL,
       min: 0.01
-       // if forSale is false, price should be set to null
+       // if available is false, price should be set to null
     },
-    forSale: { //if presence of transactionId, forSale should be set to false
+    available: { //if presence of transactionId, available should be set to false
       type: DataTypes.BOOLEAN,
       defaultValue: true, 
     },
-    frontImg: DataTypes.STRING,
-    backImg: DataTypes.STRING
+    frontImg: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    backImg: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    }
   }, {
     sequelize,
     modelName: 'Card',

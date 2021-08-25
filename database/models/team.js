@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Attribute extends Model {
+  class Team extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,14 +13,20 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   };
-  Attribute.init({
-    type: {
+  Team.init({
+    leagueId: DataTypes.INTEGER, //if nationalTeam is false then require leagueId
+    name: 
+    {
       type: DataTypes.STRING,
-      isIn: [['rookieCard', 'numbered', 'autographed', 'graded']]
+      allowNull: false,
+    },
+    nationalTeam: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
     },
   }, {
     sequelize,
-    modelName: 'Attribute',
+    modelName: 'Team',
   });
-  return Attribute;
+  return Team;
 };

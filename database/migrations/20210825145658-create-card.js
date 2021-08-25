@@ -23,9 +23,6 @@ module.exports = {
       manufacturerId: {
         type: Sequelize.INTEGER
       },
-      nationalityId: {
-        type: Sequelize.INTEGER
-      },
       teamId: {
         type: Sequelize.INTEGER
       },
@@ -35,10 +32,13 @@ module.exports = {
       year: {
         type: Sequelize.INTEGER
       },
+      salePrice: {
+        type: Sequelize.DECIMAL
+      },
       price: {
         type: Sequelize.DECIMAL
       },
-      forSale: {
+      available: {
         type: Sequelize.BOOLEAN
       },
       frontImg: {
