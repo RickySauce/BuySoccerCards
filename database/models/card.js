@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    description: DataTypes.STRING,
     transactionId: DataTypes.INTEGER,
     playerId: {
       type: DataTypes.INTEGER,

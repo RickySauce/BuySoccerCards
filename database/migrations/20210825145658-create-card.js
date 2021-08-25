@@ -11,6 +11,9 @@ module.exports = {
       vendorId: {
         type: Sequelize.INTEGER
       },
+      description: {
+        type: Sequelize.STRING
+      },
       transactionId: {
         type: Sequelize.INTEGER
       },
