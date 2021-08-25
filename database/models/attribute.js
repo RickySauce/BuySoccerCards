@@ -16,7 +16,9 @@ module.exports = (sequelize, DataTypes) => {
   Attribute.init({
     type: {
       type: DataTypes.STRING,
-      isIn: [['rookieCard', 'numbered', 'autographed', 'graded']]
+      isIn: [['rookieCard', 'numbered', 'autographed', 'graded']],
+      allowedNull: false,
+      unique: true
     },
   }, {
     sequelize,
