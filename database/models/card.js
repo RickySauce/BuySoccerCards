@@ -18,6 +18,10 @@ module.exports = (sequelize, DataTypes) => {
       Card.belongsTo(Player, {
         foreignKey: 'playerId'
       })
+      Card.belongsTo(Manufacturer, {
+        foreignKey: 'manufacturerId'
+      })
+      
     }
   };
   Card.init({
