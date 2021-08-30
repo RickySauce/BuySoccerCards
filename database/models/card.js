@@ -21,7 +21,15 @@ module.exports = (sequelize, DataTypes) => {
       Card.belongsTo(Manufacturer, {
         foreignKey: 'manufacturerId'
       })
-      
+      Card.belongsTo(Team, {
+        foreignKey: 'teamId'
+      })
+      Card.belongsTo(League, {
+        through: Team
+      })
+      Card.hasMany(Attribute, {
+        through: CardAttribute
+      })
     }
   };
   Card.init({
@@ -37,7 +45,6 @@ module.exports = (sequelize, DataTypes) => {
     playerId: DataTypes.INTEGER,
     manufacturerId: DataTypes.INTEGER,
     teamId: DataTypes.INTEGER,
-    leagueId: DataTypes.INTEGER,
     year: { 
       type: DataTypes.INTEGER,
       allowNull: false
