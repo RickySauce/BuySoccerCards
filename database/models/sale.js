@@ -11,9 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Sale.belongsTo(User, {
+        as: 'Vendor',
         foreignKey: 'vendorId'
       })
       Sale.belongsTo(User, {
+        as: 'Buyer',
         foreignKey: 'buyerId'
       })
       Sale.hasOne(Card)
