@@ -1,6 +1,6 @@
 'use strict';
 const {
-  Model, Transaction
+  Model, Sale
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Card extends Model {
@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       Card.belongsTo(User, {
         foreignKey: 'vendorId'
       })
-      Card.belongsTo(Transaction)
+      Card.belongsTo(Sale)
       Card.hasOne(Review)
       Card.belongsTo(Player, {
         foreignKey: 'playerId'
@@ -41,7 +41,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    transactionId: DataTypes.INTEGER,
+    saleId: DataTypes.INTEGER,
     playerId: DataTypes.INTEGER,
     manufacturerId: DataTypes.INTEGER,
     teamId: DataTypes.INTEGER,
@@ -61,7 +61,7 @@ module.exports = (sequelize, DataTypes) => {
       min: 0.01
        // if available is false, price should be set to null
     },
-    available: { //if presence of transactionId, available should be set to false
+    available: { //if presence of saleId, available should be set to false
       type: DataTypes.BOOLEAN,
       defaultValue: true, 
     },
