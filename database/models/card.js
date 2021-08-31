@@ -42,11 +42,14 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     saleId: DataTypes.INTEGER,
-    playerId: DataTypes.INTEGER,
+    playerId: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
     manufacturerId: DataTypes.INTEGER,
     teamId: DataTypes.INTEGER,
     year: { 
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false
       //max value should be no more greater than the current year
       //will have to research the 'oldest' cards avaialable, the year should not predate that
