@@ -23,7 +23,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
   }, {
-    sequelize,
+    sequelize, //add model validator to make sure there are no duplicates 
     modelName: 'Player',
   });
   return Player;
