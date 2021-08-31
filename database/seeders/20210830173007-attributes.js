@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkInsert('Attribute', [
+    await queryInterface.bulkInsert('Attributes', [
       {
         type: 'rookieCard' 
       }, 

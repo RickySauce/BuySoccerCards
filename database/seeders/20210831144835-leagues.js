@@ -11,21 +11,26 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-
-    await queryInterface.bulkInsert('Manufacturers', [
-      {
-        name: 'Merlin'
-      },
-      {
-        name: 'Topps'
-      },
-      {
-        name: 'Panini'
-      },
-      {
-        name: 'Topps Now'
-      }
-    ], {})
+   await queryInterface.bulkInsert('Leagues', [
+     {
+       name: 'bundesliga'
+     },
+     {
+       name: 'la liga'
+     },
+     {
+       name: 'ligue 1'
+     },
+     {
+       name: 'premier league'
+     },
+     {
+       name: 'serie a'
+     },
+     {
+       name: 'uefa champions league'
+     }
+   ])
   },
 
   down: async (queryInterface, Sequelize) => {
