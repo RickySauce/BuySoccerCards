@@ -64,10 +64,6 @@ module.exports = (sequelize, DataTypes) => {
       min: 0.01
        // if available is false, price should be set to null
     },
-    available: { //if presence of saleId, available should be set to false
-      type: DataTypes.BOOLEAN,
-      defaultValue: true, 
-    },
     frontImg: {
       type: DataTypes.STRING,
       allowNull: false,

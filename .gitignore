@@ -12,9 +12,6 @@
 /build
 
 # misc
-.package-lock.json
-seeders/
-imgs/
 structure
 .env
 .DS_Store
