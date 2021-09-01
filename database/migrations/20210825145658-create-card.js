@@ -38,9 +38,6 @@ module.exports = {
       price: {
         type: Sequelize.DECIMAL
       },
-      available: {
-        type: Sequelize.BOOLEAN
-      },
       frontImg: {
         type: Sequelize.STRING
       },

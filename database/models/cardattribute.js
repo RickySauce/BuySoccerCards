@@ -28,8 +28,7 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     },
     data: {
-      type: DataTypes.JSON,
-      allowNull: false,
+      type: DataTypes.DECIMAL,
     },
   }, {
     sequelize,
