@@ -12,6 +12,8 @@
 /build
 
 # misc
+seeders/
+imgs/
 structure
 .env
 .DS_Store
