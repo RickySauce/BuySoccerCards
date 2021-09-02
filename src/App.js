@@ -1,7 +1,17 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Header from './header'
+
 const App = () => {
   return (
-    <div className="App">
-    </div>
+    <Router>
+      <div className="App">
+        <Header/>
+      </div>
+    </Router>
   );
 }
 
