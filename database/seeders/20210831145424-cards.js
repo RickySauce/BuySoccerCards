@@ -11,7 +11,9 @@ module.exports = {
       year: "2020-2021",
       price: 450.00,
       frontImg: '/public/imgs/seeds/jude_bellingham_1_front.jpeg',
-      backImg: '/public/imgs/seeds/jude_bellingham_1_back.jpeg'
+      backImg: '/public/imgs/seeds/jude_bellingham_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 1,
@@ -21,7 +23,9 @@ module.exports = {
       year: "2020-2021",
       price: 450.00,
       frontImg: '/public/imgs/seeds/zlatan_ibrahimovic_1_front.jpeg',
-      backImg: '/public/imgs/seeds/zlatan_ibrahimovic_1_back.jpeg'
+      backImg: '/public/imgs/seeds/zlatan_ibrahimovic_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 2,
@@ -31,7 +35,9 @@ module.exports = {
       year: "2020-2021",
       price: 350.00,
       frontImg: '/public/imgs/seeds/wesley_sneijder_1_front.jpeg',
-      backImg: '/public/imgs/seeds/wesley_sneijder_1_back.jpeg'
+      backImg: '/public/imgs/seeds/wesley_sneijder_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 2,
@@ -41,7 +47,9 @@ module.exports = {
       year: "2020",
       price: 300.00,
       frontImg: '/public/imgs/seeds/erling_haaland_1_front.jpeg',
-      backImg: '/public/imgs/seeds/erling_haaland_1_back.jpeg'
+      backImg: '/public/imgs/seeds/erling_haaland_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 2,
@@ -51,7 +59,9 @@ module.exports = {
       year: "2018",
       price: 299.99,
       frontImg: '/public/imgs/seeds/marcus_rashford_1_front.jpeg',
-      backImg: '/public/imgs/seeds/marcus_rashford_1_back.jpeg'
+      backImg: '/public/imgs/seeds/marcus_rashford_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 2,
@@ -61,7 +71,9 @@ module.exports = {
       year: "2020-2021",
       price: 275.00,
       frontImg: '/public/imgs/seeds/youssoufa_moukoko_1_front.jpeg',
-      backImg: '/public/imgs/seeds/youssoufa_moukoko_1_back.jpeg'
+      backImg: '/public/imgs/seeds/youssoufa_moukoko_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 2,
@@ -71,7 +83,9 @@ module.exports = {
       year: "2019",
       price: 275.00,
       frontImg: '/public/imgs/seeds/christian_pulisic_1_front.jpeg',
-      backImg: '/public/imgs/seeds/christian_pulisic_1_back.jpeg'
+      backImg: '/public/imgs/seeds/christian_pulisic_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 2,
@@ -81,7 +95,9 @@ module.exports = {
       year: "2020-2021",
       price: 265.00,
       frontImg: '/public/imgs/seeds/jude_bellingham_2_front.jpeg',
-      backImg: '/public/imgs/seeds/jude_bellingham_2_back.jpeg'
+      backImg: '/public/imgs/seeds/jude_bellingham_2_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       vendorId: 2,
@@ -90,17 +106,14 @@ module.exports = {
       year: "2020-2021",
       price: 258.00,
       frontImg: '/public/imgs/seeds/bukayo_saka_1_front.jpeg',
-      backImg: '/public/imgs/seeds/bukayo_saka_1_back.jpeg'
+      backImg: '/public/imgs/seeds/bukayo_saka_1_back.jpeg',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
-   ])
+   ], {})
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('Cards', null, {})
   }
 };

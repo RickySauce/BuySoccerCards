@@ -14,26 +14,29 @@ module.exports = {
 
     await queryInterface.bulkInsert('Manufacturers', [
       {
-        name: 'Merlin'
+        name: 'Merlin',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
-        name: 'Topps'
+        name: 'Topps',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
-        name: 'Panini'
+        name: 'Panini',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
-        name: 'Topps Now'
+        name: 'Topps Now',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ], {})
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('Manufacturers', null, {})
   }
 };

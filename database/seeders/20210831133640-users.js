@@ -20,6 +20,8 @@ module.exports = {
       email: 'admin@admin.com',
       admin: true,
       vendor: true,
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       username: 'vendor',
@@ -28,6 +30,8 @@ module.exports = {
       firstName: 'vendor',
       email: 'vendor@vendor.com',
       vendor: true,
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
      {
       username: 'buyer',
@@ -35,6 +39,8 @@ module.exports = {
       lastName: 'buyer',
       firstName: 'buyer',
       email: 'buyer@buyer.com',
+      createdAt: new Date(),
+      updatedAt: new Date()
      },
    ], {})
   },
@@ -46,5 +52,6 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
+    await queryInterface.bulkDelete('Users', null, {})
   }
 };

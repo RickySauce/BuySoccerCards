@@ -15,44 +15,55 @@ module.exports = {
      {
        firstName: "jude",
        lastName: "bellingham",
+       createdAt: new Date(),
+       updatedAt: new Date()
      },
      {
        firstName: "zlatan",
-       lastName: "ibrahimovic"
+       lastName: "ibrahimovic",
+       createdAt: new Date(),
+       updatedAt: new Date()
      },
      {
        firstName: "wesley",
-       lastName: "sneijder"
+       lastName: "sneijder",
+       createdAt: new Date(),
+       updatedAt: new Date()
      },
      {
        firstName: "erling",
-       lastName: "haaland"
+       lastName: "haaland",
+       createdAt: new Date(),
+       updatedAt: new Date()
      },
      {
        firstName: "marcus",
-       lastName: "rashford"
+       lastName: "rashford",
+       createdAt: new Date(),
+       updatedAt: new Date()
      },
      {
        firstName: "youssoufa",
-       lastName: "moukoko"
+       lastName: "moukoko",
+       createdAt: new Date(),
+       updatedAt: new Date()
      },
      {
        firstName: "christian",
-       lastName: "pulisic"
+       lastName: "pulisic",
+       createdAt: new Date(),
+       updatedAt: new Date()
      },
      {
        firstName: "bukayo",
-       lastName: "saka"
+       lastName: "saka",
+       createdAt: new Date(),
+       updatedAt: new Date()
      }
-   ])
+   ], {})
   },
 
   down: async (queryInterface, Sequelize) => {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('Players', null, {})
   }
 };

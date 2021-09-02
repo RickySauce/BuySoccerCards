@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require("body-parser")
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize(process.env.DATABASE_URL) 
+const sequelize = new Sequelize(process.env.DEV_DATABASE_URL) 
 sequelize.authenticate()
   .then(() => {
     console.log('Connection has been established successfully.');
@@ -13,6 +13,7 @@ sequelize.authenticate()
     console.error('Unable to connect to the database:', err);
 });
 
+console.log(sequelize)
 const app = express();
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
