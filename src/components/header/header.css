@@ -3,9 +3,15 @@
 }
 
 #banner > p {
-    color: white
+    color: white;
+    text-align: center;
 }
 
 #banner {
     background-color: black;
+}
+
+#logo-container {
+    border-top-color: #f9d017;
+    border-top-style: solid;
 }

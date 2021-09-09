@@ -5,15 +5,17 @@ const logo = require('src/public/imgs/logos/Buy_Soccer_Cards_Logo_Final_300x.png
 
 const Banner = () => {
     return (
-        <div id="banner" className="container">
-            <p>whatever goes here goes here</p>
+        <div id="banner" className="container centered">
+            <p>
+                All soccer cards are shipped in penny sleeves and top loaders and First Class shipping with tracking! Shipping is $2.99 within the US and only $6.99 internationally to any location.
+            </p>
         </div>
     )
 }
 
 const LogoContainer = () => {
     return (
-        <div className="container centered">
+        <div id="logo-container" className="container centered">
             <img id="logo" src={logo.default}></img>
         </div>
     )
