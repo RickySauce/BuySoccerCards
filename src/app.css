@@ -1,5 +1,6 @@
 .container {
-    display: flex
+    display: flex;
+    padding: .5em 0 .5em 0;
 }
 
 .centered {
