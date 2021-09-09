@@ -5,7 +5,7 @@ const logo = require('src/public/imgs/logos/Buy_Soccer_Cards_Logo_Final_300x.png
 
 const LogoContainer = () => {
     return (
-        <div className="container">
+        <div className="container centered">
             <img id="logo" src={logo.default}></img>
         </div>
     )
