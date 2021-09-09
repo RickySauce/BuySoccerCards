@@ -3,6 +3,14 @@ import Navbar from './navbar'
 import './header.css'
 const logo = require('src/public/imgs/logos/Buy_Soccer_Cards_Logo_Final_300x.png')
 
+const Banner = () => {
+    return (
+        <div id="banner" className="container">
+            <p>whatever goes here goes here</p>
+        </div>
+    )
+}
+
 const LogoContainer = () => {
     return (
         <div className="container centered">
@@ -14,6 +22,7 @@ const LogoContainer = () => {
 const Header = () => {
     return(
         <div>
+            <Banner/>
             <LogoContainer/>
             <Navbar/>
         </div>
