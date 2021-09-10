@@ -13,22 +13,6 @@ const App = () => {
       <div className="App">
         <Banner/>
         <Header/>
-        <p>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          hello
-        </p>
       </div>
     </Router>
   );
