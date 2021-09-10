@@ -23,8 +23,8 @@ const LogoContainer = () => {
 
 const Header = () => {
     return(
+        <Banner/>
         <div>
-            <Banner/>
             <LogoContainer/>
             <Navbar/>
         </div>
