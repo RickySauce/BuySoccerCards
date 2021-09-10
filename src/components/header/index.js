@@ -13,7 +13,7 @@ const LogoContainer = () => {
 
 const Header = () => {
     return(
-        <div>
+        <div id="header">
             <LogoContainer/>
             <Navbar/>
         </div>
