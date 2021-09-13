@@ -1,6 +1,7 @@
 import React from 'react'
 import Newsletter from './newsletter'
 import FooterBottom from './footer-bottom'
+import './footer.css'
 
 const FooterContent = () => {
     return(
@@ -12,7 +13,7 @@ const FooterContent = () => {
 
 const Footer = () => {
     return(
-        <div>   
+        <div className='footer'>   
             <Newsletter/>
             <FooterContent/>
             <FooterBottom/>

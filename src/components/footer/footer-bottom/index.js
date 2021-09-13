@@ -20,10 +20,10 @@ const PaymentOptions = () => {
 
 const FooterBottom = () => {
     return (
-        <div className="container">
+        <div className="container footer-bottom">
             <CurrencyChanger/>
             <PaymentOptions/>
-            <p id="copyright">&copy; 2021, Buysoccercards</p>
+            <p className="copyright">&copy; 2021, Buysoccercards</p>
         </div>
     )
 }

@@ -1,0 +1,16 @@
+.footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-bottom {
+    background-color: black;
+    font-size: .8rem;
+    color: white;
+}
+
+.copyright {
+    margin-left: auto;
+}
