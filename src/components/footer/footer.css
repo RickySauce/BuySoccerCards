@@ -7,7 +7,7 @@
 .footer-content {
     display: flex;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 12px;
     color: rgba(255,255,255,.8);
     background-color: #222;
 }
@@ -25,6 +25,7 @@
 
 .contact-icons > ul {
     list-style: none;
+    padding-left: 0px;
 }
 
 .contact-icons > ul > li {
@@ -34,6 +35,10 @@
     border-width: thin;
     border-radius: 50px;
     display: flex;
+}
+
+.contact-icons > ul > li:hover {
+    cursor: pointer;
 }
 
 .contact-icons > ul > li > svg {

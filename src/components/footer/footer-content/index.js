@@ -27,7 +27,8 @@ const Contact = () => {
     return(
         <div className="footer-content-section">
             <h4> contact </h4>
-            <p> captain@buysoccercards.com </p>
+            {/* should be a clickable link, linked to the email address provided */}
+            <p> captain@buysoccercards.com </p> 
             <p> 415-340-2510 </p>
             <ContactIcons/>
         </div>
