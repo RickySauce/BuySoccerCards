@@ -23,6 +23,7 @@ const PaymentOptions = () => {
         <div className="payment-options">
             <ul className= "container items-centered">
                 {icons.map((icon, index) => {
+                    //need tooltips for icons 
                     return(
                         <li key={index}>
                             {React.createElement(icon, { margin: 30, width: 35})}
