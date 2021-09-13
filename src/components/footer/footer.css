@@ -1,4 +1,4 @@
-.footer { 
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -6,11 +6,21 @@
 }
 
 .footer-bottom {
+    align-items: center;
     background-color: black;
     font-size: .8rem;
     color: white;
     padding-left: 2.5%;
     padding-right: 2.5%;
+}
+
+.payment-options > ul {
+    list-style: none;
+    margin: auto;
+}
+
+.payment-options > ul > li {
+    margin-right: 6px
 }
 
 .copyright {
