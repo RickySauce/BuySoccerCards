@@ -23,7 +23,7 @@ const FooterBottom = () => {
         <div className="container">
             <CurrencyChanger/>
             <PaymentOptions/>
-            <p>&copy; 2021, Buysoccercards</p>
+            <p id="copyright">&copy; 2021, Buysoccercards</p>
         </div>
     )
 }
