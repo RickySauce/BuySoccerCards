@@ -2,6 +2,46 @@
     margin-top: auto;
 }
 
+/*------------- FOOTER-CONTENT CSS ---------------------*/
+
+.footer-content {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: rgba(255,255,255,.8);
+    background-color: #222;
+}
+
+.footer-content-section {
+    flex-grow: 4;
+    padding-left: 30px;
+}
+
+.footer-content-section > h4 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.contact-icons > ul {
+    list-style: none;
+}
+
+.contact-icons > ul > li {
+    padding: 8px;
+    margin-right: 6px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 50px;
+    display: flex;
+}
+
+.contact-icons > ul > li > svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/* -----------FOOTERBOTTOM CSS-------------- */
 .footer-bottom {
     align-items: center;
     background-color: black;
