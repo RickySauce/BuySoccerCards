@@ -6,6 +6,7 @@ import {
   } from "react-router-dom";
 
 const ContactIcons = () => {
+    //should all link to relative social media sites
     return (
         <div className='contact-icons'>
             <ul className="container">
@@ -36,9 +37,15 @@ const Contact = () => {
 }
 
 const PolicyPages = () => {
+    //links need to link to appropriate pages
     return (
-        <div>
-            Policy Pages
+        <div className="footer-content-section">
+            <h4>Policy Pages</h4>
+            <ul className="styled-list policy-links">
+                <li><Link to='/policies/privacy-policy'>Privacy Policy</Link></li>
+                <li><Link to='/policies/terms-of-service'>Terms of Service</Link></li> 
+                <li><Link to='/policies/refund-policy'>Refund Policy</Link></li> 
+            </ul>
         </div>
     )
 }

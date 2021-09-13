@@ -23,9 +23,18 @@
     margin-bottom: 12px;
 }
 
-.contact-icons > ul {
+.policy-links > li {
+    margin: 16px 0;
+}
+
+ul {
     list-style: none;
     padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
 }
 
 .contact-icons > ul > li {
