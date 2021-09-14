@@ -33,9 +33,11 @@ const NewsLetterField = () => {
 const Newsletter = () => {
     return(
         <div className="newsletter-container">
-            <div className="container newsletter-inner">
-                <NewsLetterContent/>
-                <NewsLetterField/>
+            <div className="newsletter-inner">
+                <div className="newsletter-content">
+                    <NewsLetterContent/>
+                    <NewsLetterField/>
+                </div>
             </div>
         </div>
     )

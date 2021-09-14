@@ -9,6 +9,8 @@
 }
 
 .newsletter-inner {
+    display: flex;
+    padding: 48px 24px;
     background-color: #f0f0f0;
     flex-direction: column;
     align-items: center;
