@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutUs from './pages/about-us';
+import * as Pages from './pages'
 import {
     Switch,
     Route
@@ -7,6 +7,7 @@ import {
   
 
 const Main = () => {
+    console.log(Pages)
     return(
         <div className="main">
             <Switch>
