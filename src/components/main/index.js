@@ -8,8 +8,17 @@ import {
 
   const mapPages = (pages) => {
     const routeWithConventions = (name) => {
-        name
-        debugger
+       var route = ""
+       name.split('').forEach((letter, index) => {
+           if (letter === name[0]){
+                route = letter.toLowerCase()
+           } else if (letter === letter.toLowerCase()) {
+               route = route + letter
+           } else {
+               route = route + "-" + letter.toLowerCase()
+           }
+       })
+       return route
     }
 
     //get function names belonging to Pages. iterate through the array
