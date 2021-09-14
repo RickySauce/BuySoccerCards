@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutUs from './pages/about-us';
 import {
     Switch,
     Route
@@ -9,7 +10,7 @@ const Main = () => {
     return(
         <div className="main">
             <Switch>
-                
+
             </Switch>
         </div>
     )
