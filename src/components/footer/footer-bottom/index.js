@@ -7,7 +7,7 @@ const CurrencyChanger = () => {
   /* responsible for app wide state change that will update currency
   for multiple componets */
     return (
-        <div className='button-container'>   
+        <div className='button-container currency-changer'>   
             <button> 
                 Currency Options
             </button>

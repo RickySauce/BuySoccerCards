@@ -2,6 +2,18 @@
     margin-top: auto;
 }
 
+/*--------------- NEWSLETTER CSS --------------*/
+.newsletter-container {
+    margin: 40px 0;
+    padding: 0 3%;
+}
+
+.newsletter-inner {
+    background-color: #f0f0f0;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*------------- FOOTER-CONTENT CSS ---------------------*/
 
 .footer-content {
@@ -13,7 +25,7 @@
 }
 
 .footer-content-section {
-    flex-grow: 4;
+    flex-grow: 1;
     padding-left: 30px;
 }
 
@@ -63,6 +75,10 @@ a {
     color: white;
     padding-left: 2.5%;
     padding-right: 2.5%;
+}
+
+.currency-changer {
+    padding-right: 30px;
 }
 
 .payment-options > ul {

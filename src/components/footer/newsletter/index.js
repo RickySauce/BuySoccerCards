@@ -16,10 +16,10 @@ const NewsLetterContent = () =>{
 const NewsLetterField = () => {
     return(
         <div>
-            <form method="post" accept-charset="UTF-8" className="contact-form">  
+            <form method="post" acceptCharset="UTF-8" className="contact-form">  
                 <div>
                     <div>
-                        <label for="Email" >Email</label>                    
+                        <input type="email" name="email" placeholder="email@example.com" autoCorrect="off" autoCapitalize="off"/>              
                     </div>
                     <div >
                         <button type="submit" name="commit">Subscribe</button>
@@ -32,8 +32,8 @@ const NewsLetterField = () => {
 
 const Newsletter = () => {
     return(
-        <div>
-            <div className="container">
+        <div className="newsletter-container">
+            <div className="container newsletter-inner">
                 <NewsLetterContent/>
                 <NewsLetterField/>
             </div>
