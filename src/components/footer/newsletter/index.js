@@ -17,7 +17,7 @@ const NewsLetterField = () => {
     return(
         <div>
             <form method="post" acceptCharset="UTF-8" className="contact-form">  
-                <div>
+                <div className="container centered">
                     <div>
                         <input type="email" name="email" placeholder="email@example.com" autoCorrect="off" autoCapitalize="off"/>              
                     </div>
