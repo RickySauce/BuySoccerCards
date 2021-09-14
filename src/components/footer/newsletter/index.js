@@ -2,8 +2,8 @@ import React from 'react'
 
 const NewsLetterContent = () =>{
     return(
-        <div>
-            <h2> newsletter </h2>
+        <div className="newsletter-content">
+            <h2 className="newsletter-title"> newsletter </h2>
             <div>
                 <p>
                      Want to be the first to know when new rare cards are available? Sign up now for the latest updates!
@@ -34,7 +34,7 @@ const Newsletter = () => {
     return(
         <div className="newsletter-container">
             <div className="newsletter-inner">
-                <div className="newsletter-content">
+                <div className="newsletter-main">
                     <NewsLetterContent/>
                     <NewsLetterField/>
                 </div>
