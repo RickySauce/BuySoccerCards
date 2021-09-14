@@ -1,0 +1,113 @@
+.footer {
+    margin-top: auto;
+}
+
+/*--------------- NEWSLETTER CSS --------------*/
+.newsletter-container {
+    margin: 40px 0;
+    padding: 0 3%;
+}
+
+.newsletter-inner {
+    display: flex;
+    padding: 48px 24px;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-content {
+    text-align: center;
+    margin: 0 auto 42px;
+    max-width: 660px;
+    position: relative;
+}
+
+.newsletter-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    font-size: 1.73333rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/*------------- FOOTER-CONTENT CSS ---------------------*/
+
+.footer-content {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 12px;
+    color: rgba(255,255,255,.8);
+    background-color: #222;
+}
+
+.footer-content-section {
+    flex-grow: 1;
+    padding-left: 30px;
+}
+
+.footer-content-section > h4 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.policy-links > li {
+    margin: 16px 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+}
+
+.contact-icons > ul > li {
+    padding: 8px;
+    margin-right: 6px;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 50px;
+    display: flex;
+}
+
+.contact-icons > ul > li:hover {
+    cursor: pointer;
+}
+
+.contact-icons > ul > li > svg {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/* -----------FOOTERBOTTOM CSS-------------- */
+.footer-bottom {
+    align-items: center;
+    background-color: black;
+    font-size: .8rem;
+    color: white;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.currency-changer {
+    padding-right: 30px;
+}
+
+.payment-options > ul {
+    list-style: none;
+    margin: auto;
+}
+
+.payment-options > ul > li {
+    margin-right: 6px
+}
+
+.copyright {
+    margin-left: auto;
+}

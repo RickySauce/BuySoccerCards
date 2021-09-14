@@ -5,7 +5,7 @@ import {
 
 const Navbar = () => {
     return(
-        <div id="navbar">
+        <div className="navbar">
             <nav className="container centered">
                     <li className="link"><Link to='/about-us'>ABOUT US</Link></li> 
                     <li className="link"><Link to='/'>HOME</Link></li>

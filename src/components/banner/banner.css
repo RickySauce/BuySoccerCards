@@ -1,4 +1,4 @@
-#banner > p {
+.banner > p {
     color: white;
     text-align: center;
     font-family: Muli,sans-serif;
@@ -8,7 +8,6 @@
     padding: 9px 24px;
     margin: 0;
 }
-
-#banner {
+.banner {
     background-color: black;
 }

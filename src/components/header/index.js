@@ -5,15 +5,15 @@ const logo = require('src/public/imgs/logos/Buy_Soccer_Cards_Logo_Final_300x.png
 
 const LogoContainer = () => {
     return (
-        <div id="logo-container" className="container centered">
-            <img id="logo" src={logo.default}></img>
+        <div className="container centered logo-container">
+            <img className="logo" src={logo.default}></img>
         </div>
     )
 }
 
 const Header = () => {
     return(
-        <div id="header">
+        <div className="header">
             <LogoContainer/>
             <Navbar/>
         </div>
