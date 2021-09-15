@@ -12,14 +12,14 @@ import TradingCardStands from "./trading-card-stands";
 //pages pipeline, should only be used to batch export pages in the pages folder
 
 export {
+    Home,
     AboutUs,
-    AllProducts,
+    Reviews,
     Blog,
-    ExpertGradingAdvice,
+    AllProducts,
+    RawSingleCards,
     GradedSoccerCards,
     HobbyBoxes,
-    RawSingleCards,
-    Reviews,
+    ExpertGradingAdvice,
     TradingCardStands,
-    Home
 }
