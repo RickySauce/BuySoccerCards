@@ -8,30 +8,34 @@ import {
 
   const mapPages = (pages) => {
     const routeWithConventions = (name) => {
-       var route = ""
-       name.split('').forEach((letter, index) => {
-           if (letter === name[0]){
-                route = letter.toLowerCase()
-           } else if (letter === letter.toLowerCase()) {
-               route = route + letter
-           } else {
-               route = route + "-" + letter.toLowerCase()
-           }
-       })
+       var route = "/"
+       if(name !== 'Home') {
+        name.split('').forEach((letter, index) => {
+            if (letter === name[0]){
+                 route = route + letter.toLowerCase()
+            } else if (letter === letter.toLowerCase()) {
+                route = route + letter
+            } else {
+                route = route + "-" + letter.toLowerCase()
+            }
+        })
+       }
        return route
     }
 
     //get function names belonging to Pages. iterate through the array
-    Object.getOwnPropertyNames(pages).map((page,index) => {
-        //only return a Route if the property is a component belonging to Pages
-        if (typeof pages[page] === "function") {
-            return(
-                <Route path={routeWithConventions(page)}>
-                    {React.createElement(pages[page])}
-                </Route>
-            )
-        }
-    })
+    return ( 
+        Object.getOwnPropertyNames(pages).map((page,index) => {
+            //only return a Route if the property is a component belonging to Pages
+            if (typeof pages[page] === "function") {
+                return(
+                    <Route path={routeWithConventions(page)}>
+                        {React.createElement(pages[page])}
+                    </Route>
+                )
+            }
+        })
+    )
 }
 
 const Main = () => {
