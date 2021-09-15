@@ -18,8 +18,8 @@ export {
     ExpertGradingAdvice,
     GradedSoccerCards,
     HobbyBoxes,
-    Home,
     RawSingleCards,
     Reviews,
-    TradingCardStands
+    TradingCardStands,
+    Home
 }

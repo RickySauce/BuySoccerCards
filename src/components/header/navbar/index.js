@@ -1,4 +1,5 @@
 import React from 'react'
+import * as Pages from '../../main/pages'
 import {
     Link
   } from "react-router-dom";
@@ -12,7 +13,7 @@ const Navbar = () => {
                     <li className="link"><Link to='/reviews'>REVIEWS</Link></li>
                     <li className="link"><Link to='/blog'>BLOG</Link></li>
                     <li className="link"><Link to='/all-products'>ALL PRODUCTS</Link></li>
-                    <li className="link"><Link to='/single-cards'>RAW SINGLE CARDS</Link></li>
+                    <li className="link"><Link to='/raw-single-cards'>RAW SINGLE CARDS</Link></li>
                     <li className="link"><Link to='/graded-cards'>GRADED SOCCER CARDS</Link></li>
                     <li className="link"><Link to='/hobby-boxes'>HOBBY BOXES</Link></li>
                     <li className="link"><Link to='/grading-service'>EXPERT GRADING ADVICE</Link></li>
