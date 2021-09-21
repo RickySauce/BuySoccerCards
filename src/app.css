@@ -50,3 +50,12 @@
     text-decoration: none;
     line-height: 32px;
 }
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    font-size: 1.73333rem;
+    line-height: 1.6;
+    font-weight: 400;
+}

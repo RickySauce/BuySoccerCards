@@ -3,7 +3,7 @@ import React from 'react'
 const NewsLetterContent = () =>{
     return(
         <div className="newsletter-content">
-            <h2 className="newsletter-title"> newsletter </h2>
+            <h2 className="section-title"> newsletter </h2>
             <div>
                 <p>
                      Want to be the first to know when new rare cards are available? Sign up now for the latest updates!
