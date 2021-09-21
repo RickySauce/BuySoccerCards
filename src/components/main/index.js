@@ -1,25 +1,28 @@
 import React from 'react'
 import * as Pages from './pages'
-import { routeWithConventions } from 'src/functions';
 import {
     Switch,
     Route
   } from "react-router-dom";
   
   const mapPages = (pages) => {
-    debugger
-    //get function names belonging to Pages. iterate through the array
-    return ( 
-        Object.getOwnPropertyNames(pages).map((page,index) => {
-            //only return a Route if the property is a component belonging to Pages
-            if (typeof pages[page] === "function") {
-                return(
-                    <Route key={page} exact path={routeWithConventions(page)}>
-                        {React.createElement(pages[page])}
+    var iteratedPages = new Array
+    const iteratePages = (pages) => {
+        Object.getOwnPropertyNames(pages).forEach((key) => {
+            if(!!pages[key].__esModule) {
+                iteratePages(pages[key])
+            } else if( typeof pages[key] === "function") {
+                iteratedPages.push(
+                     <Route key={key} exact path={pages[key].route}>
+                         {React.createElement(pages[key])}
                     </Route>
                 )
             }
         })
+    }
+    iteratePages(pages)
+    return ( 
+        iteratedPages
     )
 }
 
