@@ -7,6 +7,7 @@ import {
   } from "react-router-dom";
   
   const mapPages = (pages) => {
+    debugger
     //get function names belonging to Pages. iterate through the array
     return ( 
         Object.getOwnPropertyNames(pages).map((page,index) => {

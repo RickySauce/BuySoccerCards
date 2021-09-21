@@ -10,6 +10,8 @@ import Reviews from "./reviews";
 import TradingCardStands from "./trading-card-stands";
 
 //pages pipeline, should only be used to batch export pages in the pages folder
+AboutUs.route = '/hello'
+
 
 export {
     Home,
