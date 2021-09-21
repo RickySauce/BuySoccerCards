@@ -1,19 +1,28 @@
-.logo {
-    width: 90px;
-}
-
-.logo-container {
+.header {
     border-top-color: #f9d017;
     border-top-style: solid;
-}
-
-.header {
     z-index: 99;
     position: sticky;
     background: white;
     top:0px;
     border-bottom: 1px solid #e4e4e4;
 }
+
+.logo {
+    width: 90px;
+}
+
+/* .logo-container {
+    border-top-color: #f9d017;
+    border-top-style: solid;
+} */
+
+.header-top-nav {
+    position: absolute;
+    top: 12px;
+    right: 30px;
+}
+
 
 .navbar {
     padding: 0 10% 0 10%;
