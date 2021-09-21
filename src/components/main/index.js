@@ -6,7 +6,6 @@ import {
     Route
   } from "react-router-dom";
   
-
   const mapPages = (pages) => {
     //get function names belonging to Pages. iterate through the array
     return ( 
@@ -24,7 +23,6 @@ import {
 }
 
 const Main = () => {
-    console.log(mapPages(Pages))
     return(
         <div className="main">
             <Switch>
