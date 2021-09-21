@@ -16,9 +16,9 @@ const LogoContainer = () => {
 const HeaderTopNav = () => {
     return(
         <div className="header-top-nav">
-            <nav className="container centered">
+            <nav>
                 <li className="link"><button>Currency Options</button></li>
-                <li className="link"><Link to='/accounts/login'>LOG IN</Link></li>
+                <li className="link"><Link to='/account/login'>LOG IN</Link></li>
                 <li className="link"><Link to='/cart'>CART</Link></li>
             </nav>
         </div>
