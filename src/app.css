@@ -43,10 +43,13 @@
 }
 
 .link > a {
-    color: #212121;
     display: block;
-    text-decoration: none;
     line-height: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
 }
 
 .section-title {
