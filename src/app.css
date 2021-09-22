@@ -31,14 +31,12 @@
 }
 
 .link {
+    color: #212121;
     margin: 0 12px 0 12px;
     font-size: 12px;
     font-weight: bold;
-    float: left;
     position: relative;
     display: inline-block;
-    font-family: Oswald, sans-serif;
-    /* font-style: normal; */
     letter-spacing: 1px;
     text-transform: uppercase;
     box-sizing: inherit;

@@ -1,7 +1,7 @@
-import LogIn from "./login";
+import Login from "./login";
 
-LogIn.route = "/account/login"
+Login.route = "/account/login"
 
 export {
-    LogIn
+    Login
 }
